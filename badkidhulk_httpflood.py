@@ -6,9 +6,9 @@ import progressbar
 
 ftp=FTP_TLS()
 ftp.set_debuglevel(2)
-ftp.connect('HereEnterFtpIpAdresse')
-ftp.sendcmd('USER HereEnterTheFtpUsername')
-ftp.sendcmd('PASS HereEnterTheFtpPassword')
+ftp.connect('IciEntrezAdresseIp')
+ftp.sendcmd('USER IciEntrezUserNameFtp')
+ftp.sendcmd('PASS IciEntrezPasswordFtp')
 files = []
 ftp.dir(files.append) #Nous listons les fichiers présents sur le serveur ftp
 print(files)
